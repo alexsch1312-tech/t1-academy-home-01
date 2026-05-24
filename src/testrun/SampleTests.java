@@ -69,7 +69,7 @@ public class SampleTests {
 /*
     @LetTest(priority = 100)
     void testlimit() {
-        // статический метод для проверки ошибки
+        // метод для проверки ошибочного приоритета
     }
 */
 
