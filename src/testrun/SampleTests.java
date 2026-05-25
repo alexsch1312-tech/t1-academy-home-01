@@ -2,9 +2,6 @@ package testrun;
 
 import exception.TestAssertionError;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-
 public class SampleTests {
 
 
@@ -12,22 +9,27 @@ public class SampleTests {
     void BeforeEach1() {
         System.out.println("BeforeEach1");
     }
+
     @BeforeEach
     void beforeEach2() {
         System.out.println("BeforeEach2");
     }
+
     @AfterEach
     void afterEach1() {
         System.out.println("AfterEach1");
     }
+
     @BeforeSuite
     static void beforeSuite1() {
         System.out.println("beforeSuite1");
     }
+
     @AfterSuite
     static void afterSuite1() {
         System.out.println("afterSuite1");
     }
+
     @AfterSuite
     static void afterSuite2() {
         System.out.println("afterSuite2");
@@ -65,6 +67,24 @@ public class SampleTests {
         // статический метод для проверки ошибки
     }
     */
+
+    /*
+    @BeforeEach
+    static void testBeforeEach() {
+        // статический метод для проверки ошибки
+    }
+
+     */
+
+
+/*
+    @BeforeSuite
+    void testBeforeSuite() {
+        // не статический метод для проверки ошибки
+    }
+
+ */
+
 
 /*
     @LetTest(priority = 100)
